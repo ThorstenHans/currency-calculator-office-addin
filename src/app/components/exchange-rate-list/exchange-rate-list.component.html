@@ -1,0 +1,14 @@
+<table class="table table-striped table-hover">
+    <thead class="thead-light">
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let e of exchangeRates" [ngClass]="{'table-info': selected === e}" (click)="select(e)">
+            <td>{{e.name}}</td>
+            <td>{{e.value | number }}</td>
+        </tr>
+    </tbody>
+</table>

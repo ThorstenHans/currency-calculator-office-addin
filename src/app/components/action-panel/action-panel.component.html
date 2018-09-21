@@ -1,0 +1,31 @@
+<div class="card mb-5">
+    <div class="card-header">Office Add-Ins with Angular</div>
+    <div class="card-body">
+        <h5 class="card-title">Available Actions</h5>
+        <p>Execute one of the following actions to interact with Microsoft Excel.</p>
+        <p>
+            <button class="btn btn-secondary btn-sm" type="button" (click)="sendSelectedExchangeRateToExcel()">Send
+                selected exchange rate</button>
+        </p>
+
+        <p>
+            <button class="btn btn-secondary btn-sm" type="button" (click)="convertToSelectedCurrency()">Convert to
+                selected currency</button>
+        </p>
+        <p>
+            <button class="btn btn-secondary btn-sm" type="button" (click)="sendAllExchangeRatesToExcel()">Send all
+                exchange rates</button>
+        </p>
+        <p>
+            <button class="btn btn-seconday btn-sm" type="button" (click)="sortExchangeRatesByCurrency()">Sort by
+                currency</button>
+            &nbsp;
+            <button class="btn btn-seconday btn-sm" type="button" (click)="sortExchangeRatesByValue()">Sort by value</button>
+        </p>
+
+        <p>
+            <button class="btn btn-secondary btn-sm" type="button" (click)="createChartForExchangeRates()">Create chart for
+                exchange rates</button>
+        </p>
+    </div>
+</div>

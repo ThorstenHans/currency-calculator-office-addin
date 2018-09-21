@@ -1,0 +1,10 @@
+<div class="container">
+    <h5 class="mt-2 mb-4">BASTA! Currency Converter</h5>
+    <div>
+        {{error}}
+    </div>
+    <basta-action-panel (sendSingle)="sendSingle($event)" (sendAll)="sendAll($event)" (sortByCurrency)="sortByCurrency($event)"
+        (sortByValue)="sortByValue($event)" (convert)="convert($event)"
+        (createChart)="createChart($event)"></basta-action-panel>
+    <basta-exchange-rate-list [exchangeRates]="exchangeRates" [selected]="selectedExchangeRate" (selectExchangeRate)="selectExchangeRate($event)"></basta-exchange-rate-list>
+</div>

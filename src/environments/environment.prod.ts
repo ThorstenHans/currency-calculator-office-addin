@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+    production: true,
+    currencyApiRoot: 'https://api.exchangeratesapi.io/latest',
 };
