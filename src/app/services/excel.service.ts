@@ -10,10 +10,6 @@ export class ExcelService {
     public error: any;
 
     public sendExchangeRateToExcel(exchangeRate: ExchangeRate): void {
-        console.group(`sendExchangeRatesToExcel`);
-        console.log(`sending ExchangeRate to Excel`);
-        console.dir(exchangeRate);
-        console.groupEnd();
         Excel.run(async ctx => {
             const range = ctx.workbook.getSelectedRange();
             range.values = [[exchangeRate.value]];
@@ -42,10 +38,6 @@ export class ExcelService {
     }
 
     public sendExchangeRatesToExcel(exchangeRates: Array<ExchangeRate>): void {
-        console.group(`sendExchangeRatesToExcel`);
-        console.log(`sending ExchangeRates to Excel`);
-        console.table(exchangeRates);
-        console.groupEnd();
         Excel.run(async ctx => {
             const worksheetName = 'Exchange Rates';
             const existing = ctx.workbook.worksheets.getItemOrNullObject(worksheetName);
