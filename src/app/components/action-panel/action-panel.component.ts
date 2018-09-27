@@ -41,7 +41,7 @@ export class ActionPanelComponent {
         this.convert.next();
     }
 
-    public createChartForExchangeRates(): void{
+    public createChartForExchangeRates(): void {
         this.createChart.next();
     }
 }
