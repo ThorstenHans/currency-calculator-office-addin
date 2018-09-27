@@ -1,27 +1,29 @@
-# CurrencyConverter
+# Currency Converter Add-In for Microsoft Excel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
+The *Currency Converter Add-In for Microsoft Excel* is a simple Office Add-In which has been created for demonstration purpose. This sample is licensed under [MIT](https://opensource.org/licenses/MIT).
 
-## Development server
+## Compiling the Add-In
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+To compile and run the application locally, clone or download the project and execute the following commands in the project directory.
 
-## Code scaffolding
+```
+$ npm install
+$ npm start
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Starting the Add-In in Excel for Desktop
 
-## Build
+To start the Excel Add-In on the desktop, go to the project directory and execute the command
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+```
+$ npm run sideload
+```
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Validating Office Manifest Changes
 
-## Running end-to-end tests
+If you do changes in the manifest, those should be validated using the command 
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```
+$ npm validate
+```
