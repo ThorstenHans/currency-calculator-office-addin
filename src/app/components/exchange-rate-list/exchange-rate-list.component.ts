@@ -13,7 +13,7 @@ export class ExchangeRateListComponent {
     public selected: ExchangeRate;
     @Output()
     public selectExchangeRate = new EventEmitter<ExchangeRate>();
-    constructor() {}
+    constructor() { }
 
     public select(exchangeRate: ExchangeRate) {
         this.selectExchangeRate.next(exchangeRate);

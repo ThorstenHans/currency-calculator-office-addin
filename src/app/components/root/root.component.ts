@@ -14,7 +14,7 @@ export class RootComponent implements OnInit, OnDestroy {
     public selectedExchangeRate: ExchangeRate;
     public error: string;
     private _errorSubscription: Subscription;
-    constructor(private readonly _exchangeRateService: ExchangeRateService, private readonly _excelService: ExcelService) {}
+    constructor(private readonly _exchangeRateService: ExchangeRateService, private readonly _excelService: ExcelService) { }
 
     public ngOnInit(): void {
         this._exchangeRateService.getCurrencies().subscribe(exrates => {

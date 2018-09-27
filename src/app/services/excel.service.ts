@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { ExchangeRate } from '../models/exchange-rate';
-import { Observable, from, of } from 'rxjs';
+import { Observable } from 'rxjs';
 
 declare var Excel: any;
 @Injectable()
 export class ExcelService {
-    constructor() {}
+    constructor() { }
 
     public error: any;
 

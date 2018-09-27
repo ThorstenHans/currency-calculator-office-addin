@@ -8,7 +8,7 @@ import { ExchangeRate } from '../models/exchange-rate';
 
 @Injectable()
 export class ExchangeRateService {
-    constructor(private readonly _http: HttpClient) {}
+    constructor(private readonly _http: HttpClient) { }
 
     public getCurrencies(): Observable<Array<ExchangeRate>> {
         return this._http.get<ExchangeRatesResponse>(environment.currencyApiRoot).pipe(
